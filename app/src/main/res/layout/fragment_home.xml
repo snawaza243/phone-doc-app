@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="173dp"
+            android:layout_height="174dp"
+            android:layout_gravity="center|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.154"
+            app:srcCompat="@drawable/logo"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/phonedoc"
+            android:layout_width="126dp"
+            android:layout_height="98dp"
+            android:layout_gravity="center|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.255"
+            app:srcCompat="@drawable/mobilephonedoc"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/app_slog_3"
+            android:layout_width="353dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:width="200dp"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:text="MDT : Mobile Diagnostic Tool"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="25dp"
+            app:circularflow_radiusInDP="10dp"
+            android:background="@color/purple_200"
+            android:textColor="@color/purple_700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:width="200dp"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:text="Welcome !"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.405" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="378dp"
+            android:layout_height="283dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="An android app available for android smartphones and tablets.
+                        \n\nThis app will test software and hardware to ensure everything works perfectly.
+
+            \n\nThe purpose is to check your phone condition and generate a status report.
+"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.964" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
