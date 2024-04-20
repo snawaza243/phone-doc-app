@@ -7,15 +7,8 @@ PhoneDoc is an Android application that allows users to analyze their phone acti
   
 ![PhoneDoc](https://github.com/snawaza243/phone-doc-app/assets/91892524/13a85b99-4046-4a2d-9d6e-7cfeb5024b60)
 
-  
-</div>
 
-<div align="center">
-  
-![image](https://github.com/snawaza243/phone-doc-app/assets/91892524/c24043cd-8ffe-4eee-bd1a-1834756f1518)
-  
 </div>
-
 
 ## Features
 
@@ -24,6 +17,13 @@ PhoneDoc is an Android application that allows users to analyze their phone acti
 - **Sensors tracking:** Tracks and displays sensor data in real-time, including accelerometer, gyroscope, and proximity sensor data.
 - **Statement generating:** Generates detailed statements about phone usage, including app usage, call logs, and screen time.
 
+
+
+<div align="center">
+  
+![image](https://github.com/snawaza243/phone-doc-app/assets/91892524/c24043cd-8ffe-4eee-bd1a-1834756f1518)
+  
+</div>
 
 ## Technologies Used
 
