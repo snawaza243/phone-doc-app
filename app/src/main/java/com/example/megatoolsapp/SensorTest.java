@@ -5,7 +5,6 @@ import static android.app.PendingIntent.getActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -63,32 +62,17 @@ public class SensorTest extends AppCompatActivity {
     }
 
     public void getOrientMeth(View view) {
-        Intent i = new Intent(getApplicationContext(), SensOrient.class);
-        i.putExtra("g",7);
-        startActivity(i);
     }
 
     public void getMegnoMeth(View view) {
-        Intent i = new Intent(getApplicationContext(), SensMagneto.class);
-        i.putExtra("g",7);
-        startActivity(i);
     }
 
     public void getLightMeth(View view) {
-        Intent i = new Intent(getApplicationContext(), SensLight.class);
-        i.putExtra("g",7);
-        startActivity(i);
     }
 
     public void getAmbientMeth(View view) {
-        Intent i = new Intent(getApplicationContext(), SensTemp.class);
-        i.putExtra("g",7);
-        startActivity(i);
     }
 
     public void getPressureMeth(View view) {
-        Intent i = new Intent(getApplicationContext(), SensPressure.class);
-        i.putExtra("g",7);
-        startActivity(i);
     }
 }

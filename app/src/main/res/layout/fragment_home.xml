@@ -1,106 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeFragment">
+    tools:context=".Flash">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:context="com.example.test.scrollviews.MainActivity">
 
-        >
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="173dp"
-            android:layout_height="174dp"
-            android:layout_gravity="center|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.638"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.154"
-            app:srcCompat="@drawable/logo"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/phonedoc"
-            android:layout_width="126dp"
-            android:layout_height="98dp"
-            android:layout_gravity="center|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.266"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.255"
-            app:srcCompat="@drawable/mobilephonedoc"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/app_slog_3"
-            android:layout_width="353dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:width="200dp"
-            android:gravity="center"
-            android:minWidth="100dp"
-            android:text="MDT : Mobile Diagnostic Tool"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="25dp"
-            app:circularflow_radiusInDP="10dp"
-            android:background="@color/purple_200"
-            android:textColor="@color/purple_700"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.499" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="240dp"
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:width="200dp"
-            android:gravity="center"
-            android:minWidth="100dp"
-            android:text="Welcome !"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.405" />
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+            <!-- TODO: Update blank fragment layout -->
 
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="378dp"
-            android:layout_height="283dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:gravity="left"
-            android:padding="10dp"
-            android:text="An android app available for android smartphones and tablets.
-                        \n\nThis app will test software and hardware to ensure everything works perfectly.
+            <LinearLayout
+                android:layout_width="390dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity2">
 
-            \n\nThe purpose is to check your phone condition and generate a status report.
-"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="22dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.484"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.964" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/batteryTextHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:text="Welcome to Diagnostic app"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_below="@id/batteryTextHead"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    android:text="“PhoneDoc A Mobile Diagnostic Tool for Android” is a mobile diagnostic app available for android smartphone and tablets. The basic purpose of this Mobile App is to check your smartphone condition and generate complete phone status report."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    android:text="This mobile app will efficiently test and tell you all about the software and hardware information of your phone. Also, it will make sure that everything is working perfectly after completing tests."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
 </FrameLayout>
+

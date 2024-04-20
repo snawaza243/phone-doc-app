@@ -2,7 +2,6 @@ package com.example.megatoolsapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -29,12 +28,6 @@ public class MainActivity extends AppCompatActivity
     FeaturesFragment featuresFragment = new FeaturesFragment();
     SettingsFragment settingsFragment = new SettingsFragment();
     AboutFragment aboutFragment  = new AboutFragment();
-
-    public void switchFragment(Fragment fragment) {
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.bottomNavigationView, fragment)
-                .commit();
-    }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 

@@ -9,35 +9,16 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         tools:context="com.example.test.scrollviews.MainActivity">
 
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:gravity="center"
-            android:paddingVertical="10dp"
-            android:paddingHorizontal="15dp"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="57dp"
-            android:lineHeight="50dp"
-            android:text="Features Sensors Analysis"
-            android:background="@color/purple_200"
-            android:textColor="@color/purple_700"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="25dp" />
+
 
         <ScrollView
             android:id="@+id/scrollView"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp">
+            android:layout_marginTop="30dp">
             <!-- TODO: Update blank fragment layout -->
 
 
@@ -45,12 +26,11 @@
                 android:layout_width="410dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginTop="15dp"
                 tools:context=".MainActivity2">
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="15dp" />
+                    android:layout_height="37dp" />
 
                 <!--            1st row image airplane, battery, bluetooth-->
 
@@ -351,7 +331,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/newphoneinfo" />
+                        app:srcCompat="@drawable/phoneinfo" />
 
                     <ImageView
                         android:id="@+id/simInfoTextIcon"
@@ -365,7 +345,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/newsensor2" />
+                        app:srcCompat="@drawable/netowrkinfo" />
                 </LinearLayout>
 
                 <!--             5th row text devide, sim, network-->
@@ -422,21 +402,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/newsensor1" />
+                        app:srcCompat="@drawable/bodyscanner" />
 
                     <ImageView
                         android:id="@+id/cameraTextIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/newcamera" />
+                        app:srcCompat="@drawable/camera" />
 
                     <ImageView
                         android:id="@+id/videoTextIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/newvideo" />
+                        app:srcCompat="@drawable/video" />
                 </LinearLayout>
 
                 <!--             6th row text scanner, bp, love-->

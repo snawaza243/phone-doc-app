@@ -56,13 +56,13 @@ public class Battery extends AppCompatActivity {
                         level = (rawlevel * 100) / scale;
                     }
 
-                    String info = "Battery Level: " + level + "%\n";
-                    info += ("Technology: " + technology + "\n");
-                    info += ("Plugged: " + getPlugTypeString(plugged) + "\n");
-                    info += ("Health: " + getHealthString(health) + "\n");
-                    info += ("Status: " + getStatusString(status) + "\n");
-                    info += ("Voltage: " + voltage + "\n");
-                    info += ("Temperature: " + temperature + "\n");
+                    String info = "Battery Level: \n" + level + "%\n";
+                    info += ("\nTechnology: \n" + technology + "\n");
+                    info += ("\nPlugged: \n" + getPlugTypeString(plugged) + "\n");
+                    info += ("\nHealth: \n" + getHealthString(health) + "\n");
+                    info += ("\nStatus: \n" + getStatusString(status) + "\n");
+                    info += ("\nVoltage: \n" + voltage + "\n");
+                    info += ("\nTemperature: \n" + temperature + "\n");
 
                     setBatteryLevelText(info + "\n\n" + bundle.toString());
                 } else {
