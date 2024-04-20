@@ -5,7 +5,8 @@ PhoneDoc is an Android application that allows users to analyze their phone acti
 
 <div align="center" style="width:250;">
   
-  ![ic_phone_doc](https://github.com/snawaza243/phone-doc-app/assets/91892524/3e14af05-2b5f-4457-9068-1132ac9b4586)
+![PhoneDoc](https://github.com/snawaza243/phone-doc-app/assets/91892524/13a85b99-4046-4a2d-9d6e-7cfeb5024b60)
+
   
 </div>
 
