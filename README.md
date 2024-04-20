@@ -3,7 +3,7 @@
 PhoneDoc is an Android application that allows users to analyze their phone activity, sensors, and storage. With PhoneDoc, users can easily monitor their phone's performance, track sensor data, and generate statements to better understand their phone usage.
 
 
-<div align="center">
+<div align="center" style="width:250;">
   
   ![ic_phone_doc](https://github.com/snawaza243/phone-doc-app/assets/91892524/3e14af05-2b5f-4457-9068-1132ac9b4586)
   
